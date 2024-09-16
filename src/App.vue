@@ -1,3 +1,5 @@
+<!-- creo tre componenti, per Header, Maine Footer -->
+
 <template>
   <div>
     <h1>Hello, Vue is working!</h1>
