@@ -15,7 +15,7 @@ export default {
   padding: 20px;
   background-color: #f5f5f5;
   border: 1px solid #ddd;
-  min-height: 300px;
+  min-height: 100px;
 }
 
 h2 {
