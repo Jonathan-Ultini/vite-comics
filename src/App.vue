@@ -1,15 +1,22 @@
-<!-- creo tre componenti, per Header, Maine Footer -->
-
 <template>
   <div>
-    <h1>Hello, Vue is working!</h1>
+    <Header />
   </div>
 </template>
 
 <script>
+import Header from './components/Header.vue'
+
 export default {
-  name: 'App'
+  components: {
+    Header
+  }
 }
 </script>
 
-<style></style>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+</style>
