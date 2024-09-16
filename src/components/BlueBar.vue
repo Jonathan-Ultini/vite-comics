@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 .blue-bar {
-  background-color: #00AEEF;
+  background-color: #0282F9;
   display: flex;
   justify-content: space-around;
   padding: 15px 0;
@@ -40,6 +40,7 @@ export default {
 
 .icon-image {
   width: 50px;
+  height: 50px;
   margin-bottom: 5px;
 }
 
