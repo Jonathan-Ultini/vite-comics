@@ -10,15 +10,16 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .main-content {
   padding: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #ddd;
+  background-color: #1C1C1C;
   min-height: 100px;
-}
 
-h2 {
-  color: #333;
+  h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+  }
 }
 </style>

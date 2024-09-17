@@ -19,36 +19,35 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .header {
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  border-bottom: 2px solid #ccc;
-}
 
-.logo {
-  width: 100px;
-}
+  .logo {
+    width: 100px;
+  }
 
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 15px;
-  margin: 0;
-  padding: 0;
-}
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
 
-.menu-link {
-  color: black;
-  text-decoration: none;
-  font-size: 14px;
-  text-transform: uppercase;
-}
+    .menu-link {
+      color: black;
+      text-decoration: none;
+      font-size: 14px;
+      text-transform: uppercase;
 
-.menu-link:hover {
-  border-bottom: 2px solid blue;
+      &:hover {
+        border-bottom: 2px solid blue;
+      }
+    }
+  }
 }
 </style>

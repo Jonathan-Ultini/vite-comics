@@ -23,30 +23,30 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .blue-bar {
   background-color: #0282F9;
   display: flex;
   justify-content: space-around;
   padding: 15px 0;
-}
 
-.icon-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-}
+  .icon-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 
-.icon-image {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 5px;
-}
+    .icon-image {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 5px;
+    }
 
-p {
-  font-size: 12px;
-  text-align: center;
-  margin: 0;
+    p {
+      font-size: 12px;
+      text-align: center;
+      margin: 0;
+    }
+  }
 }
 </style>
