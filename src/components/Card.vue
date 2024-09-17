@@ -1,6 +1,5 @@
-<!-- components/Card.vue -->
 <template>
-  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+  <div class="col-lg-2 col-md-4 col-sm-4 mb-4">
     <div class="card h-100">
       <img :src="thumb" :alt="series" class="card-img-top" />
       <div class="card-body text-center">
@@ -9,6 +8,7 @@
     </div>
   </div>
 </template>
+
 
 <script>
 export default {
@@ -24,8 +24,9 @@ export default {
   background-color: #333;
   border: none;
 
-  img {
-    height: 200px;
+  .card-img-top {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
   }
 
