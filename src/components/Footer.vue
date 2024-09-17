@@ -78,6 +78,7 @@ export default {
   position: relative;
   background-color: #2c2c2c;
   color: white;
+  padding: 0;
 
 
   .footer-background img {
