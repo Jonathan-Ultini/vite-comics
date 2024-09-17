@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer">
+  <footer class="footer container-fluid">
     <div class="footer-background">
       <img src="/src/assets/dc-logo-bg.png" alt="">
     </div>
@@ -50,16 +50,17 @@
 
     </div>
 
-    <div class="footer-bottom">
-      <button class="signup-button">SIGN-UP NOW!</button>
-      <div class="social-media">
-        <p class="blue">FOLLOW US</p>
-        <div class="social-links">
-          <a href="#"><img src="/src/assets/footer-facebook.png" alt="Facebook"></a>
-          <a href="#"><img src="/src/assets/footer-twitter.png" alt="Twitter"></a>
-          <a href="#"><img src="/src/assets/footer-youtube.png" alt="YouTube"></a>
-          <a href="#"><img src="/src/assets/footer-pinterest.png" alt="Pinterest"></a>
-          <a href="#"><img src="/src/assets/footer-periscope.png" alt="Location"></a>
+    <!-- Footer bottom -->
+    <div class="footer-bottom d-flex justify-content-between align-items-center">
+      <button class="btn btn-outline-primary text-white">SIGN-UP NOW!</button>
+      <div class="social-media d-flex align-items-center">
+        <p class="text-primary me-3 mb-0">FOLLOW US</p>
+        <div class="social-links d-flex">
+          <a href="#" class="me-2 "><img src="/src/assets/footer-facebook.png" alt="Facebook"></a>
+          <a href="#" class="me-2"><img src="/src/assets/footer-twitter.png" alt="Twitter"></a>
+          <a href="#" class="me-2"><img src="/src/assets/footer-youtube.png" alt="YouTube"></a>
+          <a href="#" class="me-2"><img src="/src/assets/footer-pinterest.png" alt="Pinterest"></a>
+          <a href="#"><img src="/src/assets/footer-periscope.png" alt="Periscope"></a>
         </div>
       </div>
     </div>
@@ -78,11 +79,14 @@ export default {
   background-color: #2c2c2c;
   color: white;
 
+
   .footer-background img {
     position: absolute;
-    top: -50px;
-    left: 700px;
-    height: 100%;
+    top: -10%;
+    right: 5%;
+    transform: translateX(-50%);
+    height: auto;
+    max-height: 100%;
     z-index: 2;
   }
 
@@ -131,16 +135,7 @@ export default {
     position: relative;
     z-index: 2;
 
-    .signup-button {
-      background-color: transparent;
-      color: white;
-      padding: 10px 20px;
-      border: 2px solid #0282F9;
 
-      &:hover {
-        background-color: #008bc5;
-      }
-    }
 
     .blue {
       color: #0282F9;

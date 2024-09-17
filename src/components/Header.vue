@@ -1,11 +1,21 @@
 <template>
-  <nav class="header">
-    <img src="/src/assets/dc-logo.png" alt="DC Logo" class="logo">
-    <ul class="menu">
-      <li v-for="item in menuItems" :key="item">
-        <a href="#" class="menu-link">{{ item }}</a>
-      </li>
-    </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="/src/assets/dc-logo.png" alt="DC Logo" class="logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item" v-for="item in menuItems" :key="item">
+            <a class="nav-link" href="#">{{ item }}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 </template>
 
@@ -20,34 +30,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.header {
-  background-color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-
-  .logo {
-    width: 100px;
-  }
-
-  .menu {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-
-    .menu-link {
-      color: black;
-      text-decoration: none;
-      font-size: 14px;
-      text-transform: uppercase;
-
-      &:hover {
-        border-bottom: 2px solid blue;
-      }
-    }
-  }
+.logo {
+  width: 100px;
 }
 </style>

@@ -1,9 +1,11 @@
 <!-- components/Card.vue -->
 <template>
-  <div class="card">
-    <img :src="thumb" :alt="series" />
-    <div class="card-body">
-      <h5 class="card-title">{{ series }}</h5>
+  <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <div class="card h-100">
+      <img :src="thumb" :alt="series" class="card-img-top" />
+      <div class="card-body text-center">
+        <h5 class="card-title text-white">{{ series }}</h5>
+      </div>
     </div>
   </div>
 </template>
@@ -12,25 +14,27 @@
 export default {
   props: {
     thumb: String,
-    series: String
-  },
+    series: String,
+  }
 };
 </script>
 
 <style scoped lang="scss">
 .card {
-  width: 200px;
-  margin: 10px;
+  background-color: #333;
+  border: none;
 
   img {
-    width: 100%;
-    height: auto;
+    height: 200px;
+    object-fit: cover;
   }
 
   .card-body {
-    background-color: #333;
-    color: white;
-    text-align: center;
+    background-color: #1C1C1C;
+  }
+
+  h5 {
+    font-size: 1.1rem;
   }
 }
 </style>

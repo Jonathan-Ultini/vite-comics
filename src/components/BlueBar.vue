@@ -1,11 +1,14 @@
 <template>
-  <section class="blue-bar">
-    <div class="icon-section" v-for="icon in icons" :key="icon.title">
-      <img :src="icon.image" :alt="icon.title" class="icon-image" />
-      <p>{{ icon.title }}</p>
+  <section class="blue-bar container-fluid py-3">
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-2 text-center" v-for="icon in icons" :key="icon.title">
+        <img :src="icon.image" :alt="icon.title" class="icon-image img-fluid mb-2" />
+        <p class="text-white mb-0">{{ icon.title }}</p>
+      </div>
     </div>
   </section>
 </template>
+
 
 <script>
 export default {
@@ -25,30 +28,17 @@ export default {
 
 <style scoped lang="scss">
 .blue-bar {
-  background-color: #0282F9;
-  display: flex;
-  justify-content: space-around;
-  padding: 15px 0;
   position: relative;
   z-index: 3;
+  background-color: #0282F9;
 
-  .icon-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
+  .icon-image {
+    max-width: 60px;
+    max-height: 60px;
+  }
 
-    .icon-image {
-      width: 50px;
-      height: 50px;
-      margin-bottom: 5px;
-    }
-
-    p {
-      font-size: 12px;
-      text-align: center;
-      margin: 0;
-    }
+  p {
+    font-size: 14px;
   }
 }
 </style>
