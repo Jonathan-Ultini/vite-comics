@@ -29,6 +29,8 @@ export default {
   display: flex;
   justify-content: space-around;
   padding: 15px 0;
+  position: relative;
+  z-index: 3;
 
   .icon-section {
     display: flex;

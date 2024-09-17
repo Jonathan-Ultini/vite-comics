@@ -1,6 +1,7 @@
 <template>
   <footer class="footer">
     <div class="footer-background">
+      <img src="/src/assets/dc-logo-bg.png" alt="">
     </div>
     <div class="footer-content">
       <div class="footer-section">
@@ -73,29 +74,27 @@ export default {
 
 <style scoped lang="scss">
 .footer {
+  position: relative;
   background-color: #2c2c2c;
   color: white;
 
-  .footer-background {
+  .footer-background img {
     position: absolute;
-    top: 300px;
-    left: 100px;
-    right: -500px;
-    height: 50%;
-    z-index: 1;
-    background-image: url("/src/assets/dc-logo-bg.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    top: -50px;
+    left: 700px;
+    height: 100%;
+    z-index: 2;
   }
 
   .footer-content {
     display: flex;
+    position: relative;
     background-image: url("/src/assets/footer-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 300px;
+    z-index: 1;
   }
 
   .footer-section {
@@ -129,6 +128,8 @@ export default {
     justify-content: space-between;
     padding: 20px;
     background-color: #303030;
+    position: relative;
+    z-index: 2;
 
     .signup-button {
       background-color: transparent;
